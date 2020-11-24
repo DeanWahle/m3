@@ -700,6 +700,3 @@ type IndexClaimsManager interface {
 		blockStart time.Time,
 	) (int, error)
 }
-
-// DeleteFilesFn deletes files passed in as arg.
-type DeleteFilesFn func(files []string) error
