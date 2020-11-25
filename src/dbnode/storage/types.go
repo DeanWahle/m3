@@ -1278,6 +1278,12 @@ type Options interface {
 	// OnColdFlush returns the on cold flush processor.
 	OnColdFlush() OnColdFlush
 
+	// SetIterationOptions sets iteration options.
+	SetIterationOptions(index.IterationOptions) Options
+
+	// IterationOptions returns iteration options.
+	IterationOptions() index.IterationOptions
+
 	// SetForceColdWritesEnabled sets options for forcing cold writes.
 	SetForceColdWritesEnabled(value bool) Options
 
