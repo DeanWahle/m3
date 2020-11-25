@@ -5002,6 +5002,34 @@ func (mr *MockOptionsMockRecorder) OnColdFlush() *gomock.Call {
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "OnColdFlush", reflect.TypeOf((*MockOptions)(nil).OnColdFlush))
 }
 
+// SetIterationOptions mocks base method
+func (m *MockOptions) SetIterationOptions(arg0 index.IterationOptions) Options {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "SetIterationOptions", arg0)
+	ret0, _ := ret[0].(Options)
+	return ret0
+}
+
+// SetIterationOptions indicates an expected call of SetIterationOptions
+func (mr *MockOptionsMockRecorder) SetIterationOptions(arg0 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SetIterationOptions", reflect.TypeOf((*MockOptions)(nil).SetIterationOptions), arg0)
+}
+
+// IterationOptions mocks base method
+func (m *MockOptions) IterationOptions() index.IterationOptions {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "IterationOptions")
+	ret0, _ := ret[0].(index.IterationOptions)
+	return ret0
+}
+
+// IterationOptions indicates an expected call of IterationOptions
+func (mr *MockOptionsMockRecorder) IterationOptions() *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "IterationOptions", reflect.TypeOf((*MockOptions)(nil).IterationOptions))
+}
+
 // SetForceColdWritesEnabled mocks base method
 func (m *MockOptions) SetForceColdWritesEnabled(value bool) Options {
 	m.ctrl.T.Helper()
